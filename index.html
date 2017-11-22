@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>Canvas Demo</title>
+
+  <style>
+    #canvas {
+      border: 2px solid black;
+      border-radius: 2px;
+      margin-bottom: 20px;
+      margin-top: 20px;
+      float: left;
+    }
+    
+    #sidebar {
+      float: left;
+      width: 200px;
+      border: 1px solid green;
+      border-radius: 4px;
+      height: 600px;
+      margin-top: 20px;
+      margin-left: 5px;
+    }
+    
+    #score {
+      margin-top: 30 px;
+      color: #1E4683;
+      font-size: 100px;
+      text-align: center;
+      margin-left: 33px;
+    }
+    
+    input[type="button"] {
+      margin-top: 10px;
+      color: blue;
+      width: 150px;
+      height: 50px;
+      font-size: 18px;
+      margin-left: 20px;
+    }
+    
+    h1 {
+      margin-left: 20px;
+      font-family: "Times New Roman", Times, serif;
+      color: #58CBBC;
+    }
+    
+    #message {
+      color: red;
+      font-size: 30px;
+    }
+  </style>
+
+</head>
+
+<body onload="init();">
+  <div>
+    <h1> JavaScript Snake Game ! </h1>
+    <canvas id="canvas" width="600" height="600">
+
+      Sorry, browser does not support canvas.
+    </canvas>
+  </div>
+  <div id="sidebar">
+    <input type="button" value="PAUSE" onclick="pause()" />
+    <br>
+    <input type="button" value="RESUME" onclick="resume()" />
+    <br>
+    <input type="button" value="NEW GAME" onclick="new_game()" />
+    <br>
+    <br>
+    <div>
+      <h2> Score : </h2> <span id="score">0</span> </div>
+    <h2 id="message"></h2>
+  </div>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>
