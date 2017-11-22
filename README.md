@@ -1,2 +1,2 @@
 # snake-javascript-game
-Javascript-Canvas-Snake-Game
+Simple Javascript Snake Game with Canvas
